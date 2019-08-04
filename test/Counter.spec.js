@@ -6,7 +6,7 @@
 //  decrementメソッドを持つ
 //  decrementメソッドを実行すると_countプロパティの値は1減る
 
-var assert = require("power-assert");
+const assert = require("power-assert");
 const Counter = require("../src/Counter.js");
 
 describe("src/Counter.jsのテスト", () => {
@@ -17,10 +17,6 @@ describe("src/Counter.jsのテスト", () => {
   it("_countプロパティの初期値は0である", () => {
     const counter = new Counter();
     assert.strictEqual(counter._count === 0, true);
-  });
-  it("incrementメソッドを持つ", () => {
-    const counter = new Counter();
-    assert.strictEqual(typeof counter.increment === "function", true);
   });
   it("incrementメソッドを持つ", () => {
     const counter = new Counter();
